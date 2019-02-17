@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "67de8d68-8a2c-4d4a-b4d5-a6c3c03a2cef",
+		"name": "Solar View",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=Regional&parameters=T2M,ALLSKY_SFC_SW_DWN&startDate=19830701&endDate=19830705&userCommunity=SSE&tempAverage=DAILY&outputList=CSV&bbox=-40,-70,-38,-66&user=anonymous",
+					"protocol": "https",
+					"host": [
+						"power",
+						"larc",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"cgi-bin",
+						"v1",
+						"DataAccess.py"
+					],
+					"query": [
+						{
+							"key": "request",
+							"value": "execute"
+						},
+						{
+							"key": "identifier",
+							"value": "Regional"
+						},
+						{
+							"key": "parameters",
+							"value": "T2M,ALLSKY_SFC_SW_DWN"
+						},
+						{
+							"key": "startDate",
+							"value": "19830701"
+						},
+						{
+							"key": "endDate",
+							"value": "19830705"
+						},
+						{
+							"key": "userCommunity",
+							"value": "SSE"
+						},
+						{
+							"key": "tempAverage",
+							"value": "DAILY"
+						},
+						{
+							"key": "outputList",
+							"value": "CSV"
+						},
+						{
+							"key": "bbox",
+							"value": "-40,-70,-38,-66"
+						},
+						{
+							"key": "user",
+							"value": "anonymous"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Point",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://power.larc.nasa.gov/cgi-bin/v1/DataAccess.py?request=execute&identifier=SinglePoint&parameters=T2M,PS,ALLSKY_SFC_SW_DWN&startDate=20160301&endDate=20160331&userCommunity=SSE&tempAverage=DAILY&outputList=JSON,ASCII&lat=36&lon=45&user=anonymous",
+					"protocol": "https",
+					"host": [
+						"power",
+						"larc",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"cgi-bin",
+						"v1",
+						"DataAccess.py"
+					],
+					"query": [
+						{
+							"key": "request",
+							"value": "execute"
+						},
+						{
+							"key": "identifier",
+							"value": "SinglePoint"
+						},
+						{
+							"key": "parameters",
+							"value": "T2M,PS,ALLSKY_SFC_SW_DWN"
+						},
+						{
+							"key": "startDate",
+							"value": "20160301"
+						},
+						{
+							"key": "endDate",
+							"value": "20160331"
+						},
+						{
+							"key": "userCommunity",
+							"value": "SSE"
+						},
+						{
+							"key": "tempAverage",
+							"value": "DAILY"
+						},
+						{
+							"key": "outputList",
+							"value": "JSON,ASCII"
+						},
+						{
+							"key": "lat",
+							"value": "36"
+						},
+						{
+							"key": "lon",
+							"value": "45"
+						},
+						{
+							"key": "user",
+							"value": "anonymous"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
